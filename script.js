@@ -12,12 +12,14 @@ let windSpeed = document.getElementById("wind-speed");
 
 const fetchData = async () => {
   let inputValue = userInput.value;
+  try {
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${inputValue}?unitGroup=metric&key=D3W4TCWFT9GHHFKEQN8XQPGU7&contentType=json`;
   await fetch(url)
     .then((data) => data.json())
     .then((item) => {
       console.log(item);
-
+  } catch (error) {
+      console.log(error)
       city.innerHTML = `${item.resolvedAddress}`.toUpperCase();
       description.innerHTML = `${item.description}`;
       temp.innerHTML = `${item.currentConditions.temp} °C`;
