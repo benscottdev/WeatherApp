@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WEATHER REPORT</h1>
+    </header>
+    <div class="search">
+      <input
+        placeholder="Please Enter City"
+        type="text"
+        name="city"
+        id="input-city"
+      />
+      <button>SEARCH</button>
+    </div>
+    <main>
+      <div class="city">
+        <h2 id="city">Please Search</h2>
+        <p id="description"></p>
+      </div>
+      <div class="weather-stats">
+        <div class="temp-div">
+          <h1>Temperature</h1>
+          <p id="temp"></p>
+        </div>
+
+        <div class="cond-div">
+          <h1>Conditions</h1>
+          <p id="conditions"></p>
+        </div>
+
+        <div class="sunrise-div">
+          <h1>Sunrise</h1>
+          <p id="sunrise"></p>
+        </div>
+
+        <div class="sunset-div">
+          <h1>Sunset</h1>
+          <p id="sunset"></p>
+        </div>
+
+        <div class="wind-speed-div">
+          <h1>Wind Speed</h1>
+          <p id="wind-speed"></p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  background: rgb(148, 207, 255);
+}
+
+header {
+  font-size: 22px;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 0px 10px rgb(4, 94, 139);
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  background-color: rgb(2, 0, 102);
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.city {
+  text-align: center;
+  margin-top: 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 350px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 29%,
+    rgba(184, 230, 253, 0.5) 100%
+  );
+}
+
+.city h2 {
+  margin: 10px 30px;
+  color: rgb(79, 79, 79);
+}
+
+.city p {
+  margin: 10px 30px;
+  color: rgb(88, 144, 241);
+}
+
+.weather-stats {
+  text-align: center;
+  margin-top: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 29%,
+    rgba(184, 230, 253, 0.5) 100%
+  );
+}
+
+.search input {
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.search button {
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  height: 42px;
+  color: white;
+  background-color: rgb(2, 0, 102);
+}
+
+.search button:hover {
+  font-weight: 900;
+}
+
+.search button:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(124, 209, 248);
+}
+
+.weather-stats h1 {
+  margin: 15px 35px;
+  font-weight: 900;
+  color: rgb(79, 79, 79);
+  font-size: 18px;
+}
+
+.weather-stats p {
+  margin: 0px 35px;
+  font-size: 12px;
+  color: rgb(88, 144, 241);
+  font-weight: 500;
+}
